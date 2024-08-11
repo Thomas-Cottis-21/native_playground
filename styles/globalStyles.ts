@@ -20,6 +20,19 @@ const globalStyles = StyleSheet.create({
       width: '90%',
       borderBottomWidth: 2,
       borderBottomColor: 'black'
+    },
+    button: {
+      fontSize: 20,
+      backgroundColor: 'black',
+      margin: 20,
+      borderRadius: 10
+    },
+    buttonText: {
+      color: 'white',
+      fontFamily: 'SourceCodePro',
+      fontSize: 15,
+      padding: 20,
+      textAlign: 'center'
     }
 });
 

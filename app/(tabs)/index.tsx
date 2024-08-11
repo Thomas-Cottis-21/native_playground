@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Text, View } from "react-native";
+import { TouchableOpacity, Text, View } from "react-native";
 import globalStyles from "@/styles/globalStyles";
 import homeStyles from "@/styles/homeStyles";
 import { ScrollView, TextInput } from "react-native-gesture-handler";
@@ -48,7 +48,9 @@ export default function Index() {
       placeholder="Age"
       value={age}
       onChangeText={handleAgeChange}/>
-      <Button title="Submit" onPress={handleSubmit}/>
+      <TouchableOpacity style={globalStyles.button} onPress={handleSubmit}>
+        <Text style={globalStyles.buttonText}>Submit</Text>
+      </TouchableOpacity>
     </View>
   );
 }
